@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    margin-top: 80px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  header {
+   
+    color: black;
+    text-align: center;
+    padding: 20px;
+ 
+  }
+  
+  .main-heading {
+    animation: fadeIn 1s ease-out;
+    font-weight: bold;
+  }
+  
+  /* Slide-in Animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Team Header Animation */
+  .team h2 {
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Stagger Animation */
+  @keyframes staggerSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .team-member {
+    animation: staggerSlideIn 0.5s ease-out;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .intro {
+    margin-bottom: 20px;
+    
+  }
+  
+  .features {
+    h2 {
+      color: #333;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      margin-bottom: 8px;
+    }
+  }
+  
+  .team {
+  
+    padding: 20px;
+    text-align: center;
+  
+    h2 {
+      color: #333;
+    }
+  
+    .team-member {
+      margin-top: 20px;
+  
+      img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+  
+      h3 {
+        color: #333;
+      }
+  
+      p {
+        color: #666;
+      }
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    header {
+      padding: 10px;
+    }
+  
+    .main-heading {
+      font-size: 1.5em;
+    }
+  
+    .about-content {
+      padding: 10px;
+    }
+  
+    .team-member {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
