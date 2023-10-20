@@ -76,11 +76,11 @@ body {
     
   }
   
+  h2{
+    color: black;
+  }
   .features {
-    h2 {
-      color: #333;
-    }
-  
+
     ul {
       list-style-type: none;
       padding: 0;
@@ -96,10 +96,6 @@ body {
   
     padding: 20px;
     text-align: center;
-  
-    h2 {
-      color: #333;
-    }
   
     .team-member {
       margin-top: 20px;
@@ -141,10 +137,10 @@ body {
       padding: 10px;
     }
   
-    .team-member {
-      img {
+    .team-member img{
+      
         width: 100px;
         height: 100px;
-      }
+      
     }
   }
