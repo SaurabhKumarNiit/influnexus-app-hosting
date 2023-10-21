@@ -28,13 +28,13 @@
   
       <div class="team-member" *ngFor="let member of teamMembers" [@stagger]="{ value: 'slideIn', params: { delay: '100ms' } }">
         <img src="{{ member.image }}" alt="{{ member.name }}" width="400px">
-        <h3>{{ member.name }}</h3>
-        <p>{{ member.role }}</p>
+        <div class="info">
+          <h3>{{ member.name }}</h3>
+          <p>{{ member.role }}</p>
+        </div>
+       
       </div>
     </section>
-  
-    <footer>
-      <p>&copy; 2023 Influnexus Video Editing. All rights reserved.</p>
-    </footer>
   </body>
-  
+  <br><br>
+  <app-footer></app-footer>

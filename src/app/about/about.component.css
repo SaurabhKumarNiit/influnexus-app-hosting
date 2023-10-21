@@ -15,7 +15,6 @@ body {
       opacity: 1;
     }
   }
-  
   header {
    
     color: black;
@@ -23,7 +22,6 @@ body {
     padding: 20px;
  
   }
-  
   .main-heading {
     animation: fadeIn 1s ease-out;
     font-weight: bold;
@@ -40,8 +38,6 @@ body {
       transform: translateY(0);
     }
   }
-  
-  /* Team Header Animation */
   .team h2 {
     animation: slideIn 1s ease-out;
   }
@@ -98,30 +94,32 @@ body {
     .team-member {
       margin-top: 20px;
   
-     img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin-bottom: 10px;
-      }
-  
-      h3 {
-        color: #333;
-      }
-  
-      p {
-        color: #666;
-      }
     }
   }
-  
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+  .team h3 {
+    color: #333;
   }
+
+  .team  p {
+    color: #666;
+  }
+
+  .team img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+  .team-member{
+    display: inline-flex;
+  }
+  .info{
+    position: absolute;
+  margin-top: 150px;
+  }
+  
   @media screen and (max-width: 600px) {
     header {
       padding: 10px;
